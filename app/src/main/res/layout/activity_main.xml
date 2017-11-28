@@ -9,6 +9,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <!-- 你自己的内容 -->
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -33,6 +34,7 @@
 
     </android.support.design.widget.CoordinatorLayout>
 
+    <!-- Drawer -->
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

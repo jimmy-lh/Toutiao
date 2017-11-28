@@ -73,6 +73,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
     }
 
+    //第一次进来，引导用户使用
     private void showTapTarget() {
         final Display display = getWindowManager().getDefaultDisplay();
         final Rect target = new Rect(
@@ -308,7 +309,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
             case R.id.nav_setting:
                 startActivity(new Intent(this, SettingActivity.class));
-                drawer_layout.closeDrawers();
+                drawer_layout.closeDrawers();//没有参数,关闭所有的出现的抽屉
                 return false;
 
             case R.id.nav_share:

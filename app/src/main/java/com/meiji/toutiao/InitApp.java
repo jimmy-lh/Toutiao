@@ -28,6 +28,10 @@ public class InitApp extends MultiDexApplication {
         }
     }
 
+    /**
+     * 此处有个bug，该方法只有在app启动的时候才会进入，所以当时间由白天模式进入晚上模式的时候，不会自动变为晚上模式
+     * 初始化主题是使用白天模式还是夜晚模式
+     */
     private void initTheme() {
         SettingUtil settingUtil = SettingUtil.getInstance();
 

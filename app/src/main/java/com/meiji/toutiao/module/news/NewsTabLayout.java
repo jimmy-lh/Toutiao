@@ -158,6 +158,7 @@ public class NewsTabLayout extends Fragment {
         }
     }
 
+    //双击刷新数据
     public void onDoubleClick() {
         if (titleList != null && titleList.size() > 0 && fragmentList != null && fragmentList.size() > 0) {
             int item = viewPager.getCurrentItem();
