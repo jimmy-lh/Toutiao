@@ -76,7 +76,9 @@ public class NewsTabLayout extends Fragment {
         TabLayout tab_layout = view.findViewById(R.id.tab_layout_news);
         viewPager = view.findViewById(R.id.view_pager_news);
 
+        //方法setupWithViewPager，和ViewPager联动起来
         tab_layout.setupWithViewPager(viewPager);
+        //设置TabMode,MODE_FIXED为均匀分布（适合tab较少的情况），MODE_SCROLLABLE为滚动（适合tab较多的情况）
         tab_layout.setTabMode(TabLayout.MODE_SCROLLABLE);
         ImageView add_channel_iv = view.findViewById(R.id.add_channel_iv);
         add_channel_iv.setOnClickListener(new View.OnClickListener() {

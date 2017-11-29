@@ -42,6 +42,21 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+    <!--TabLayout 属性：
+        1.改变选中字体的颜色
+        app:tabSelectedTextColor="@android:color/holo_orange_light"
+        2.改变未选中字体的颜色
+        app:tabTextColor="@color/colorPrimary"
+        3.改变指示器下标的颜色
+        app:tabIndicatorColor="@android:color/holo_orange_light"
+        4.改变整个TabLayout的颜色
+        app:tabBackground="color"
+        5.改变TabLayout内部字体大小
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"//设置文字的外貌
+        6.改变指示器下标的高度
+        app:tabIndicatorHeight="4dp"
+
+        android 属性：?attr/selectableItemBackground：点击水波纹效果-->
     <style name="TabLayout" parent="Base.Widget.Design.TabLayout">
         <item name="tabMaxWidth">@dimen/design_tab_max_width</item>
         <item name="tabIndicatorColor">#FFFFFF</item>
