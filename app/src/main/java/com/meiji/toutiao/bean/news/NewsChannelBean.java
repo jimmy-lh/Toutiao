@@ -77,4 +77,14 @@ public class NewsChannelBean implements Comparable<NewsChannelBean> {
     public int compareTo(@NonNull NewsChannelBean o) {
         return this.position - o.getPosition();
     }
+
+    @Override
+    public String toString() {
+        return "NewsChannelBean{" +
+                "channelId='" + channelId + '\'' +
+                ", channelName='" + channelName + '\'' +
+                ", isEnable=" + isEnable +
+                ", position=" + position +
+                '}';
+    }
 }

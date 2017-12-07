@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--android:overScrollMode="never"  上下拉到边界时出现光晕,never不出现，默认是出现-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
